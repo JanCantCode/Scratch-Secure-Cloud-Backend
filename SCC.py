@@ -8,7 +8,7 @@ import time
 seed(time.time())
 
 
-primelist = [109] # is this a security issue? yes. will anyone ever read this and will i change it? nah imagine there we're more prime numbers here i had no motivation to write a generator
+primelist = [149, 137, 227, 643, 139, 601, 457, 761, 281, 131, 571, 337, 541, 307, 653, 563, 337, 167, 467, 569, 347, 509, 643, 239, 293, 541, 199, 673, 283, 139, 701 ,103] # is this a security issue? yes. will anyone ever read this and will i change it? nah imagine there we're more prime numbers here i had no motivation to write a generator
 users = {} # users to keep in memory for auth keys 'n stuff
 
 
