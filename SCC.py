@@ -31,7 +31,7 @@ def prime(): # returns a prime number which is essentially the prime number of t
 
 @client.request
 def g(): # returns the first g, which is the non prime part of the shared public key
-	g = round(random()*2000)
+	g = round(random()*200000000)
 	usr = str(client.get_requester())
 	users[usr]["g"] = g
 	return g
@@ -39,7 +39,7 @@ def g(): # returns the first g, which is the non prime part of the shared public
 @client.request
 def g2(garg): # asks the server to generate a private key, instantly returns the second "version" of the public key. (the client at this point should have generated a private key and sends the pow thing as the g2 argument)
 	usr = str(client.get_requester())
-	a = round(random()*(users[usr]["p"]-1))
+	a = round(random()*20000000))
 	users[usr]["a"] = a
 	users[usr]["g2"] = garg
 	return pow(int(users[usr]["g"]), a, int(users[usr]["p"]))
